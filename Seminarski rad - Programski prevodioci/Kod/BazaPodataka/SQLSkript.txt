@@ -1,0 +1,22 @@
+USE [master]
+GO
+
+CREATE DATABASE [EvidencijaRezultataSportskihMerenja]
+GO
+
+USE [EvidencijaRezultataSportskihMerenja]
+GO
+
+
+CREATE TABLE [dbo].[Sportista]
+(
+    [ID] [int] identity(1, 1) primary key,
+    [Ime] [nvarchar](30) NOT NULL,
+    [Prezime] [nvarchar](50) NOT NULL,
+    [Pol] [nvarchar](10) NOT NULL,
+    [Starost] [int] NULL,
+    [Visina] [int] NOT NULL,
+    [Tezina] [int] NOT NULL,
+    [BrojTrbusnjaka] [int] NOT NULL,
+    [BrojSklekova] [int] NOT NULL
+)
